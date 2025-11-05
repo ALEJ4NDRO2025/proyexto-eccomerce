@@ -28,9 +28,9 @@
     <!-- menu .html -->
      <div class="hidden md:flex space-x-6 justify-center ml-100">
          <a href="index.html" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">inicio<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a>
-         <a href="#" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">Productos <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a>
-         <a href="#" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">Categorías<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a>
-         <a href="#" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">Contacto<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a> 
+         <a href="./productos.html" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">Productos <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a>
+         <a href="categorias.html" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">Categorías<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a>
+         <a href="contactenos.html" class="text-gray-700 hover:text-orange-600 font-extralight transition-colors duration-200 relative group">Contacto<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"></span></a> 
     </div>
 
     <!-- Cart and Mobile Menu MEJORADOS --> 
@@ -104,122 +104,258 @@
 </div>
 
 
-<!--PRODUCTO 1: Macbook pro-->
-
-<div class="mt-8 flex space-x-4  ">
-
-<div class="bg-white rounded-xl shadow-lg  p-6  max-w-sm overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" 
-     data-category="laptops" 
-     data-price="6200000" 
-     data-product-id="macbook-pro-16">
-
-  <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
-    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&mx586&q=80" 
-         alt="MacBook Pro 16 M3"
-         class="w-full h-full object-center hover:scale-105 transition-transform duration-300"
-         loading="lazy">
-    <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">-15%</div>
+<<!-- Producto -->
+<div>
+  <div class="product-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+      <!-- Producto 1: MacBook Pro -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="laptops" data-price="6200000" data-product-id="macbook-pro-16">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&w=600&q=80" alt="MacBook Pro 16 M3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+          <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+            -15%
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">MacBook Pro 16" M3</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Chip M3, 16GB RAM, 512GB SSD</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$6.200.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="macbook-pro-16">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm" data-product="MacBook Pro 16 M3" data-price="6200000" data-id="macbook-pro-16">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto 2: iPhone 15 Pro -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="celulares" data-price="4800000" data-product-id="iphone-15-pro">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&w=600&q=80" alt="iPhone 15 Pro" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+          <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+            Nuevo
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">iPhone 15 Pro</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">128GB, Titanio Natural</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$4.800.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+            ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="iphone-15-pro">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm" data-product="iPhone 15 Pro" data-price="4800000" data-id="iphone-15-pro">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto 3: RTX 4080 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="componentes" data-price="3200000" data-product-id="nvidia-rtx-4080">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://i.blogs.es/92cc42/geforcertx4080-ap/1366_2000.jpeg" alt="NVIDIA RTX 4080" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">NVIDIA RTX 4080</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">16GB GDDR6X, Gaming OC</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$3.200.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="nvidia-rtx-4080">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm" data-product="NVIDIA RTX 4080" data-price="3200000" data-id="nvidia-rtx-4080">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 4: Samsung Galaxy S24 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="celulares" data-price="2400000" data-product-id="samsung-galaxy-s24">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://images.samsung.com/is/image/samsung/assets/co/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-form-factor-start-mo_1.jpg?imbypass=true" alt="Samsung Galaxy S24" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+          <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+            Popular
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">Samsung Galaxy S24</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">256GB, Phantom Black</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$2.400.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="samsung-galaxy-s24">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm" data-product="Samsung Galaxy S24" data-price="2400000" data-id="samsung-galaxy-s24">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto 5: Dell XPS 13 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="laptops" data-price="3500000" data-product-id="dell-xps-13">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://static0.xdaimages.com/wordpress/wp-content/uploads/2022/06/Dell-XPS-13-12.jpg" alt="Dell XPS 13" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">Dell XPS 13</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Intel i7, 16GB RAM, 512GB SSD</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$3.500.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="dell-xps-13">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm" data-product="Dell XPS 13" data-price="3500000" data-id="dell-xps-13">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto 6: AMD Ryzen 7 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="componentes" data-price="1100000" data-product-id="amd-ryzen-7">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://cdn.arstechnica.net/wp-content/uploads/2023/04/IMG_0971.jpeg" alt="AMD Ryzen 7 7800X3D" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+          <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+            Hot
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">AMD Ryzen 7 7800X3D</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">8-Core, 4.2GHz, AM5</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$1.100.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="amd-ryzen-7">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm" data-product="AMD Ryzen 7 7800X3D" data-price="1100000" data-id="amd-ryzen-7">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 7: AirPods Pro -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="accesorios" data-price="750000" data-product-id="airpods-pro">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://es.digitaltrends.com/wp-content/uploads/2023/09/analisis-airpods-pro-2-generacion-feat.jpg?resize=1200%2C720&p=1" alt="AirPods Pro 2 Gen" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">AirPods Pro (2ª Gen)</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Cancelación activa de ruido</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$750.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="airpods-pro">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm"
+              data-product="AirPods Pro 2ª Gen"
+              data-price="750000"
+              data-id="airpods-pro">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto 8: Silla Gaming -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="accesorios" data-price="890000" data-product-id="silla-gaming">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="https://balamrush.com/cdn/shop/files/LIGHTNING_1c35799a-1215-4d86-b47f-41b562830d20.jpg?v=1692718448&width=1300" alt="Silla Gaming Pro" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-50">Silla Gaming Pro</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Ergonómica, LED RGB</p>
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-2xl font-bold text-blue-600">$890.000</span>
+            </div>
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+          </div>
+          <div class="flex space-x-2">
+            <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm" data-product-id="silla-gaming">
+              Ver Detalles
+            </button>
+            <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm"
+              data-product="Silla Gaming Pro"
+              data-price="890000"
+              data-id="silla-gaming">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
   </div>
-
-  <div class="p-6">
-    <h3 class="text-lg font-bold mb-2 text-gray-800">MacBook Pro 16” M3</h3>
-    <p class="text-sm text-gray-600 mb-4">Chip M3, 16GB RAM, 512GB SSD</p>
-    <div class="flex items-center justify-between mb-4">
-      <span class="text-xl font-bold text-blue-600">$6.200.000</span>
-      <span class="flex text-yellow-400">★★★★★</span>
-    </div>
-
-    <div class="flex space-x-2">
-      <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm">
-        Ver Detalles
-      </button>
-      <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm"
-              data-product="MacBook Pro 16 M3"
-              data-price="6200000"
-              data-id="macbook-pro-16">
-        Comprar
-      </button>
-    </div>
+  
+      <!-- Barra De Pestañas -->
+      <div class="mt-12 mb-4 flex justify-center">
+          <nav class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-900">
+            <button disabled class="px-3 py-1 text-gray-400 cursor-not-allowed">Anterior</button>
+            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800">1</button>
+            <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-950">2</button>
+            <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-950">3</button>
+            <button class="px-3 py-1 text-gray-700 dark:text-gray-300 hover:text-blue-600">Siguiente</button>
+          </nav>
+      </div>
   </div>
 </div>
-
-<!-- PRODUCTO 2: iPhone 15 Pro -->
-<div class="bg-white rounded-xl shadow-lg  p-6  max-w-sm overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" 
-     data-category="celulares" 
-     data-price="4800000" 
-     data-product-id="iphone-15-pro">
-
-  <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
-    <img src="https://images.unsplash.com/photo-1592576457338-74b7d12085ab?ixlib=rb-4.0.3&w=600&q=80" 
-         alt="iPhone 15 Pro"
-         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-         loading="lazy">
-    <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
-  </div>
-
-  <div class="p-6">
-    <h3 class="text-lg font-bold mb-2 text-gray-800">iPhone 15 Pro</h3>
-    <p class="text-sm text-gray-600 mb-4">128GB, Titanio Natural</p>
-    <div class="flex items-center justify-between mb-4">
-      <span class="text-2xl font-bold text-blue-600">$4.800.000</span>
-      <div class="flex text-yellow-400">★★★★★</div>
-    </div>
-
-    <div class="flex space-x-2">
-      <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm">
-        Ver Detalles
-      </button>
-      <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm"
-              data-product="iPhone 15 Pro"
-              data-price="4800000"
-              data-id="iphone-15-pro">
-        Comprar
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- PRODUCTO 3: RTX 4080-->
-<div class="bg-white rounded-xl shadow-lg  p-6  max-w-sm overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" 
-     data-category="componentes" 
-     data-price="3200000" 
-     data-product-id="nvidia-rtx-4080">
-
-  <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
-    <img src="https://images.unsplash.com/photo-1592576457338-74b7d12085ab?ixlib=rb-4.0.3&w=600&q=80" 
-         alt="iPhone 15 Pro"
-         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-         loading="lazy">
-    <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
-  </div>
-
-  <div class="p-6">
-    <h3 class="text-lg font-bold mb-2 text-gray-800">iPhone 15 Pro</h3>
-    <p class="text-sm text-gray-600 mb-4">128GB, Titanio Natural</p>
-    <div class="flex items-center justify-between mb-4">
-      <span class="text-2xl font-bold text-blue-600">$4.800.000</span>
-      <div class="flex text-yellow-400">★★★★★</div>
-    </div>
-
-    <div class="flex space-x-2">
-      <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm">
-        Ver Detalles
-      </button>
-      <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm"
-              data-product="iPhone 15 Pro"
-              data-price="4800000"
-              data-id="iphone-15-pro">
-        Comprar
-      </button>
-    </div>
-  </div>
-</div>
-
-
-</div>
-
-
-
     
+</main>
+
+<!-- Pie De Pagina -->
+<footer></footer>
 </body>
 </html>
