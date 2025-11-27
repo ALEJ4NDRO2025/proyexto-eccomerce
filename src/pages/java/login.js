@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         erroDiv.classList.add('hidden'); 
         btn.disabled = true; 
-
+        // Recopilar datos del formulario
         const datos={
             email:document.getElementById('email').value.trim(),
             password:document.getElementById('password').value.trim()
