@@ -1,5 +1,10 @@
 import mongoose from "mongoose";
-const uri = "mongodb+srv://adsotarde:adso2025@eccomerce.gvdi4ig.mongodb.net/ECCOMERCE?retrywrites=true&w=majority";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const uri = process.env.MONGODB_URI
+
 
 mongoose.connect(uri)
 
