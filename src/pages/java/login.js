@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     // LÓGICA DE LOGIN
     // ==========================================
-    const API_URL='http://localhost:8081/api/login';
+    const API_URL='https://proyecto-eccomerce-wilson.onrender.com/api/login';
 
     document.getElementById('login-form').addEventListener('submit', async function(e){
         e.preventDefault();

@@ -1,7 +1,7 @@
 //funcion de cargar productos
 async function cargarProductos(){
     try{
-        const response = await fetch('http://localhost:8081/api/productos');//ajustar la ruta si es necesario
+        const response = await fetch('https://proyecto-eccomerce-wilson.onrender.com/api/productos');//ajustar la ruta si es necesario
         
         // Manejo de error de HTTP
         if (!response.ok) {

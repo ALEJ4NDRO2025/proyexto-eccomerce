@@ -121,11 +121,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Enviar datos al backend (ruta /api/users)
         // ==========================================
         try {
-            // Hacemos la llamada fetch a http://localhost:8081/api/users que está definida en el backend.
+            // Hacemos la llamada fetch a https://proyecto-eccomerce-wilson.onrender.com/api/users que está definida en el backend.
             // La petición es POST y mandamos JSON. El backend se encargará de validar, hashear contraseña y guardar en DB.
             let serverResponse = null;
             try {
-                const res = await fetch('http://localhost:8081/api/users', {
+                const res = await fetch('https://proyecto-eccomerce-wilson.onrender.com/api/users', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ userId: newUserId, nombre, email, password })

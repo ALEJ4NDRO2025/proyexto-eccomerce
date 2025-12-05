@@ -16,7 +16,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     boton.textContent = "Enviando...";
 
     try {
-        const response = await fetch("http://localhost:8081/api/Recuperar/solicitar-codigo", {
+        const response = await fetch("https://proyecto-eccomerce-wilson.onrender.com/api/Recuperar/solicitar-codigo", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email: correo })

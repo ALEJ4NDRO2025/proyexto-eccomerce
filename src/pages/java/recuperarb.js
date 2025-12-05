@@ -40,7 +40,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     boton.textContent = "Cambiando contraseña...";
 
     try {
-        const response = await fetch("http://localhost:8081/api/Recuperar/cambiar-password", {
+        const response = await fetch("https://proyecto-eccomerce-wilson.onrender.com/api/Recuperar/cambiar-password", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

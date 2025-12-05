@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let usuarioBackend; 
 
     try {
-        const respuesta = await fetch('http://localhost:8081/api/perfil/obtener', {
+        const respuesta = await fetch('https://proyecto-eccomerce-wilson.onrender.com/api/perfil/obtener', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: perfilLocal.email })

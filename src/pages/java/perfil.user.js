@@ -28,7 +28,7 @@ async function obtenerDatosUsuario() {
 
         console.log('📤 Enviando solicitud al backend con email:', userData.email);
 
-        const response = await fetch('http://localhost:8081/api/perfil/obtener', {
+        const response = await fetch('https://proyecto-eccomerce-wilson.onrender.com/api/perfil/obtener', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: userData.email })
@@ -60,7 +60,7 @@ async function guardarDatosUsuario(nuevoNombre) {
     try {
         const userData = JSON.parse(localStorage.getItem('usuario'));
         
-        const response = await fetch('http://localhost:8081/api/perfil/actualizar', {
+        const response = await fetch('https://proyecto-eccomerce-wilson.onrender.com/api/perfil/actualizar', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
@@ -95,7 +95,7 @@ async function eliminarCuenta() {
     try {
         const userData = JSON.parse(localStorage.getItem('usuario'));
         
-        const response = await fetch('http://localhost:8081/api/perfil/eliminar', {
+        const response = await fetch('https://proyecto-eccomerce-wilson.onrender.com/api/perfil/eliminar', {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: userData.email })
