@@ -14,10 +14,12 @@ export const registrarUsers = async (req, res) => {
         // Verificar si ya existe el usuario
         const existingUser = await User.findOne({ email });
         if (existingUser) {
-            return res.status(400).json({ message: "El correo ya está registrado" });
+            return res.status(400).json({ message: "El Usuario ya está registrado" });
         }
 
         // Encriptar la contraseña
+
+        const saltRounds = 10; // Puedes ajustar el número de rondas de sal según tus necesidades
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Crear nuevo usuario
@@ -26,15 +28,18 @@ export const registrarUsers = async (req, res) => {
             nombre,
             email,
             password: hashedPassword,
-            role: role || "user"
+            role:"user" ///role || --- esto iba antes de la edición, pendiente de revisar
         });
 
         // Guardar en la base de datos
         await newUser.save();
 
         res.status(201).json({ message: "Usuario registrado con éxito" });
+
     } catch (error) {
-        console.error("Error al registrar el usuario:", error);
-        res.status(500).json({ message: "Error al registrar el usuario" });
+        res.status(500).json({
+         message: "Error al registrar el usuario",
+         error: error.message});
+   
     }
 };

@@ -13,22 +13,3 @@ router.get("/usuario/:userId", obtenerPedidosUsuario);
 router.get("/:pedidoId", obtenerPedido);
 
 export default router;
-```
-
----
-
-## 📋 **LAS 3 RUTAS QUE NECESITAS:**
-
-### **1. Crear pedido**
-```
-POST /api/pedidos
-```
-
-### **2. Ver pedidos de un usuario**
-```
-GET /api/pedidos/usuario/user123
-```
-
-### **3. Ver un pedido específico**
-```
-GET /api/pedidos/PED-1234567890-123
